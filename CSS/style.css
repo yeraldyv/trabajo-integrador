@@ -1,0 +1,60 @@
+*{
+    font-family: 'Be Vietnam Pro', 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ## Colores
+
+### Primario
+Violeta: #8B48BF
+Celeste brillante: #3CDDF3
+
+### Neutro
+Azul grisáceo oscuro: #1E1E26
+Azul muy oscuro: #232851
+Variante gris claro: rgb (249, 249, 249) */
+
+
+.seccionesConFondo{
+    background-color: #3CDDF3;
+    color: white;
+    padding: 1.5rem 21rem 0.8rem 1rem;
+}
+
+article.encabezadosConFondo{
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+article.parrafosConFondo {
+    font-size: 0.8rem;
+    padding-bottom: 0.9rem;
+}
+
+.terceraSeccionEnumeracion{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem 3rem 2rem;
+}
+
+.contenedorEnumeracion{
+    display: flex;
+}
+
+.enumeracion{
+    color: red;
+    font-weight: bold;
+}
+
+.encabezadosEnumeracion{
+    color: #1E1E26;
+    padding: 0rem 2rem 1rem 1rem;
+}
+
+.parrafosEnumeracion{
+    color: rgb (249, 249, 249);
+    line-height: 25px;
+    padding: 1.5rem 0rem;
+}
