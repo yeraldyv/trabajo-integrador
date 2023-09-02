@@ -16,27 +16,34 @@ Azul grisáceo oscuro: #1E1E26
 Azul muy oscuro: #232851
 Variante gris claro: rgb (249, 249, 249) */
 
-
-.seccionesConFondo{
+/* Segunda seccion del main */
+.segundaSeccionEnumeracion{
+    display: flex;
+    flex-direction: column;
     background-color: #3CDDF3;
     color: white;
-    padding: 1.5rem 21rem 0.8rem 1rem;
+    padding: 1.5rem 7rem 0.8rem 1.5rem;
 }
 
 article.encabezadosConFondo{
     padding-bottom: 2rem;
+    padding-right: 4rem;
     font-weight: bold;
 }
 
 article.parrafosConFondo {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding-bottom: 0.9rem;
+    line-height: 20px;
+    align-self: flex-start;
+    justify-content: flex-end;
 }
 
+/* Tercera seccion del main, esta contiene la enumeracion */
 .terceraSeccionEnumeracion{
     display: flex;
     flex-direction: column;
-    padding: 3rem 0rem 3rem 2rem;
+    padding: 3rem 5rem 1.4rem 2rem;
 }
 
 .contenedorEnumeracion{
@@ -54,7 +61,41 @@ article.parrafosConFondo {
 }
 
 .parrafosEnumeracion{
-    color: rgb (249, 249, 249);
     line-height: 25px;
     padding: 1.5rem 0rem;
+    color: rgb (249, 249, 249);
 }
+
+/* Cuarta seccion del main*/
+.cuartaSeccionDestacados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encabezadoCuartaSeccion{
+    padding-top: 0rem;
+}
+
+.articulosCuartaSeccion p{
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    /* color: red; */
+}
+
+/* .contenidoCuartaSeccion{
+    color: #3CDDF3;
+} */
+
+/* .ImgCuartaSeccion{
+    color: #3CDDF3;
+}
+
+.h4CuartaSeccion{
+    color: #3CDDF3;
+}
+
+.pCuartaSeccion{
+    color: #3CDDF3;
+} */
