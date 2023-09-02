@@ -4,6 +4,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+article.parrafoSeccion1{
+    font-size: 0.8rem;
+    padding-bottom: 1.5rem;
+}
+
+button{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid mediumorchid;
+    background-color: mediumorchid;
+}
 
 /* ## Colores
 
