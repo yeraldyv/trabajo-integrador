@@ -2,19 +2,7 @@
     font-family: 'Be Vietnam Pro', 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-/* ## Colores
-
-### Primario
-Violeta: #8B48BF
-Celeste brillante: #3CDDF3
-
-### Neutro
-Azul grisáceo oscuro: #1E1E26
-Azul muy oscuro: #232851
-Variante gris claro: rgb (249, 249, 249) */
 
 /* Segunda seccion del main */
 .segundaSeccionEnumeracion{
@@ -57,45 +45,66 @@ article.parrafosConFondo {
 
 .encabezadosEnumeracion{
     color: #1E1E26;
-    padding: 0rem 2rem 1rem 1rem;
+    padding: 0rem 2rem 0.5rem 1rem;
 }
 
 .parrafosEnumeracion{
     line-height: 25px;
-    padding: 1.5rem 0rem;
+    padding: 1rem 0rem 1.4rem 0.1rem;
     color: rgb (249, 249, 249);
 }
 
 /* Cuarta seccion del main*/
 .cuartaSeccionDestacados{
+    align-items: center;
+    justify-content: center;
+    align-self: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .encabezadoCuartaSeccion{
     padding-top: 0rem;
+    padding-bottom: 3rem;
+    color: #242E53;
 }
 
 .articulosCuartaSeccion p{
-    align-content: center;
-    align-self: center;
-    align-items: center;
-    /* color: red; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+
+.contenidoCuartaSeccion{
+    display: flex;
+    flex-direction: column;
+    color: #3CDDF3;
 }
 
-/* .contenidoCuartaSeccion{
+.ImgCuartaSeccion{
+    display: flex;
+    flex-direction: column;
     color: #3CDDF3;
-} */
-
-/* .ImgCuartaSeccion{
-    color: #3CDDF3;
+    align-self: center;
+    padding-bottom: 1rem;
 }
 
 .h4CuartaSeccion{
-    color: #3CDDF3;
+    display: flex;
+    color: #323851;
+    align-self: center;
+    padding-bottom: 0.3rem;
 }
 
-.pCuartaSeccion{
-    color: #3CDDF3;
-} */
+div.contenidoCuartaSeccion p{
+    display: flex;
+    align-self: center;
+}
+
+p.parrCuartaSeccion{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    color: #B3B2B7;
+    padding: 0.3rem 2rem 1rem 3rem;
+}
