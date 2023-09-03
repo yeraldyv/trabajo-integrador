@@ -50,7 +50,7 @@ article.parrafosConFondo {
 .terceraSeccionEnumeracion{
     display: flex;
     flex-direction: column;
-    padding: 3rem 5rem 1.4rem 2rem;
+    padding: 3rem 5rem 1rem 2rem;
 }
 
 .contenedorEnumeracion{
@@ -58,19 +58,20 @@ article.parrafosConFondo {
 }
 
 .enumeracion{
-    color: red;
+    color: white;
     font-weight: bold;
+    background-color: #8B48BF
 }
 
 .encabezadosEnumeracion{
-    color: #1E1E26;
+    color: #242E53;
     padding: 0rem 2rem 0.5rem 1rem;
 }
 
 .parrafosEnumeracion{
     line-height: 25px;
-    padding: 1rem 0rem 1.4rem 0.1rem;
-    color: rgb (249, 249, 249);
+    padding: 1.4rem 0rem 1.4rem 0.1rem;
+    color: #B3B2B7;
 }
 
 /* Cuarta seccion del main*/
@@ -80,10 +81,10 @@ article.parrafosConFondo {
     align-self: center;
     display: flex;
     flex-direction: column;
+    padding: 1.8rem 2rem 3rem 2rem;
 }
 
 .encabezadoCuartaSeccion{
-    padding-top: 0rem;
     padding-bottom: 3rem;
     color: #242E53;
 }
@@ -125,5 +126,34 @@ p.parrCuartaSeccion{
     align-self: center;
     justify-content: center;
     color: #B3B2B7;
-    padding: 0.3rem 2rem 1rem 3rem;
+    padding: 0.3rem 2rem 1.5rem 3rem;
+}
+
+.cuartaSeccionDestacados button{
+    margin: 2rem 0rem 0rem 0rem;
+    color: white;
+    background-color: #8B48BF;
+    padding: 0.6rem 3rem 0.4rem 3rem;
+}
+
+/* Quinta seccion con fondo */
+.quintaSeccionFondo{
+    align-items: center;
+    background-color: #3CDDF3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 10rem;
+}
+
+.textoQuintaSeccion{
+    display: flex;
+    align-self: center;
+    padding-bottom: 2rem;
+}
+
+.quintaSeccionFondo button{
+    color: white;
+    background-color: #232851;
+    padding: 0.59rem 2rem 0.49rem 2rem;
 }
