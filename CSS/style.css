@@ -274,7 +274,6 @@ article.parrafosConFondo {
     color: #B3B2B7;
     width: 29rem;
 }
-<<<<<<< HEAD
 }
 
 /* Footer */
@@ -331,7 +330,7 @@ footer {
 
 .copyright {
     text-align: center;
-=======
+}
 
 /* Cuarta seccion del main*/
 .cuartaSeccionDestacados{
@@ -393,7 +392,4 @@ h2.textoQuintaSeccion{
 .quintaSeccionFondo button{
     color: #8B48BF;
     background-color: white;
-}
-
->>>>>>> 30af63aefc7b69da73dedbcd24dac4c2e917ef44
 }
