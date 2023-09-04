@@ -11,34 +11,23 @@
 </head>
 <body>
     <header>
-        <nav>
-            <!-- Logo -->
-            <img src="img/logo.svg" alt="Logo de sportit">
-        </nav>
-        <nav>
-            <a href="#">Sports</a>
-            <a href="#">Products</a>
-            <a href="#">About Us</a>
-            <a href="#">Trainning</a>
-            <a href="#">Community</a>
-        </nav>
-        <nav>
-            <button>Contact</button>
-        </nav>
+        <div class="logo">
+            <img src="img/logo.svg" alt="Logo de la empresa">
+        </div>
+        <div class="menu-icon">
+            <div class="iconoLineas"></div>
+            <div class="iconoLineas"></div>
+            <div class="iconoLineas"></div>
+        </div>
     </header>
     <main>
         <!-- Primera seccion del main, contiene una imagen del tenista y textos -->
-        <section>
+        <section class="primeraSeccion">
             <img src="img/padel-intro.png" alt="Tenista">
-            <article>
-                <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
-            </article>
-            <article class="parrafoSeccion1">
-                <p>The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
-            </article>
-            <article>
-                <button>Contact</button>
-            </article>
+                <div class="espaciado"></div>
+            <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
+            <p>The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
+            <button>Contact</button>
         </section>
         <!-- Segunda seccion del main, contiene el texto ¿Que es diferente entre pros? -->
         <section class="segundaSeccion">
@@ -108,7 +97,43 @@
         </section>
     </main>
     <footer>
-        
+        <article class="cajaBusqueda">
+            <input type="text" placeholder="Update in your inbox...">
+            <button>Go</button>
+        </article>
+    
+        <article class="navigation">
+            <div class="column">
+                <ul>
+                    <li>Home</li>
+                    <li>Pricing</li>
+                    <li>Products</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li>Trainning</li>
+                    <li>Community</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+        </article>
+    
+        <article class="icons-and-logo">
+            <div class="icon-row">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+            <div class="logo">
+                <img src="img/logo.svg" alt="Logo de la empresa">
+            </div>
+        </article>
+    
+        <article class="copyright">
+            <p>&copy; 2023. Todos los derechos reservados.</p>
+        </article>
     </footer>
 </body>
 </html>

@@ -3,15 +3,72 @@
     margin: 0;
     padding: 0;
 }
-h1{
-    font-size: 3rem;
-    font-weight: bold;
-    padding-bottom: 1.5rem;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
 }
 
-article.parrafoSeccion1{
-    font-size: 0.8rem;
-    padding-bottom: 1.5rem;
+/* Estilos para el logo */
+.logo img {
+    max-width: 100px;
+    /* Ajusta el tamaño máximo del logo */
+}
+
+/* Estilos para el icono de menú */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.iconoLineas {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+.primeraSeccion {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Imagen centrada */
+.primeraSeccion img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.espaciado {
+    height: 50px;
+}
+
+.primeraSeccion h1 {
+    font-size: 30px;
+    color: #232851;
+    text-align: right;
+}
+
+.primeraSeccion p {
+    font-size: 16px;
+    color: black;
+    text-align: right;
+}
+
+.primeraSeccion button {
+    background-color: #8B48BF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
 }
 
 button{
@@ -19,8 +76,8 @@ button{
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 10px;
-    border: 2px solid mediumorchid;
-    background-color: mediumorchid;
+    border: none;
+    background-color: #8B48BF;
 }
 
 /* Segunda seccion del main */
@@ -218,4 +275,60 @@ article.parrafosConFondo {
     color: #B3B2B7;
     width: 29rem;
 }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Cuadro de búsqueda */
+.cajaBusqueda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.cajaBusqueda input {
+    flex: 1;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.cajaBusqueda button {
+    background-color: #800080;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Navegación en dos columnas */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.icons-and-logo {
+    text-align: center;
+}
+
+.icon-row {
+    font-size: 24px;
+}
+
+.copyright {
+    text-align: center;
 }
