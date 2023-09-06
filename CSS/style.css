@@ -80,6 +80,7 @@ button{
     background-color: #8B48BF;
 }
 
+
 /* Segunda seccion del main */
 .segundaSeccion{
     display: flex;
@@ -148,6 +149,7 @@ article.parrafosConFondo {
 }
 
 .articulosCuartaSeccion p{
+    color: #B3B2B7;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -185,11 +187,14 @@ p.parrCuartaSeccion{
     justify-content: center;
     color: #B3B2B7;
     padding: 0.3rem 2rem 1.5rem 3rem;
+    text-align: center;
 }
 
 .cuartaSeccionDestacados button{
     border: none;
+    border-radius: 20px;
     font-weight: normal;
+    font-size: 14px;
     margin: 2rem 0rem 0rem 0rem;
     color: white;
     background-color: #8B48BF;
@@ -203,77 +208,26 @@ p.parrCuartaSeccion{
     color: white;
     display: flex;
     flex-direction: column;
-    padding: 2rem 10rem;
+    padding: 2rem 8rem;
 }
 
-.textoQuintaSeccion{
+.quintaSeccionFondo h2{
     display: flex;
-    align-self: center;
-    padding-bottom: 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 1rem 0rem 2rem 0rem;
+    padding: 0rem 1.6rem 0rem 1.6rem;
 }
 
 .quintaSeccionFondo button{
     border: none;
+    border-radius: 20px;
     color: white;
     background-color: #232851;
     font-weight: normal;
-    padding: 0.59rem 2rem 0.49rem 2rem;
-}
-
-/* Media Queries, responsive con dispositivos móbiles y pantallas de escritorio */
-
-@media (min-width: 480px){
-/* Segunda seccion del main */
-section.segundaSeccion{
-    background-color: #8B48BF;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 1.5rem 3.5rem 0.8rem 3.5rem;
-}
-
-article.encabezadosConFondo{
-    justify-content: center;
-    padding: 0rem 0rem 0rem 6rem;
-    font-weight: bold;
-    width: 45rem;
-}
-
-article.parrafosConFondo {
-    font-size: 0.9rem;
-    line-height: 20px;
-    justify-content: center;
-    padding-right: 10rem;
-    padding-left: 2rem;
-}
-
-/* Tercera seccion del main */
-.terceraSeccionEnumeracion{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* padding: 3rem 5rem 1rem 2rem; */
-}
-
-.terceraSeccionEnumeracion article{
-    margin: 0rem 0.7rem 0.5rem 0.9rem;
-}
-
-.contenedorEnumeracion{
-    display: flex;
-}
-
-.encabezadosEnumeracion{
-    color: #242E53;
-    padding: 0rem 2rem 0.2rem 0.9rem;
-}
-
-.parrafosEnumeracion{
-    line-height: 25px;
-    padding: 0.6rem 0rem 1.4rem 3.5rem;
-    color: #B3B2B7;
-    width: 29rem;
-}
+    font-size: 12px;
+    padding: 0.59rem 1rem 0.49rem 1rem;
+    width: 100px;
 }
 
 /* Footer */
@@ -332,7 +286,82 @@ footer {
     text-align: center;
 }
 
-/* Cuarta seccion del main*/
+
+/* Media Queries, responsive con dispositivos móbiles y pantallas de escritorio */
+
+@media (min-width: 480px){
+ /* Segunda seccion del main  */
+section.segundaSeccion{
+    background-color: #8B48BF;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 3rem 0rem 3.5rem;
+}
+
+.encabezadosConFondo{
+    font-weight: bold;
+    width: 500px;
+}
+
+.parrafosConFondo {
+    font-size: 0.9rem;
+    line-height: 20px;
+    padding-right: 10rem;
+    padding-left: 2rem;
+}
+
+/* Quinta seccion con fondo */
+
+.quintaSeccionFondo{
+    background-color: #8B48BF;
+    flex-direction: row;
+    padding: 1rem 4rem 0rem 4rem;
+    justify-content: space-between;
+}
+
+.quintaSeccionFondo button{
+    color: #8B48BF;
+    background-color: white;
+}
+
+.quintaSeccionFondo h2{
+    width: 280px;
+    text-align: start;
+    padding: 8px 4rem 0rem 1rem;
+}
+
+/* 
+
+Tercera seccion del main
+.terceraSeccionEnumeracion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 5rem 1rem 2rem; 
+}
+
+.terceraSeccionEnumeracion article{
+    margin: 0rem 0.7rem 0.5rem 0.9rem;
+}
+
+.contenedorEnumeracion{
+    display: flex;
+}
+
+.encabezadosEnumeracion{
+    color: #242E53;
+    padding: 0rem 2rem 0.2rem 0.9rem;
+}
+
+.parrafosEnumeracion{
+    line-height: 25px;
+    padding: 0.6rem 0rem 1.4rem 3.5rem;
+    color: #B3B2B7;
+    width: 29rem;
+}
+
+Cuarta seccion del main
 .cuartaSeccionDestacados{
     display: flex;
     flex-direction: row;
@@ -375,21 +404,6 @@ h4.h4CuartaSeccion{
     background-color: #8B48BF;
     padding: 0.6rem 3rem 0.4rem 3rem;
 }
+ */
 
-/* Quinta seccion con fondo */
-.quintaSeccionFondo{
-    background-color: #8B48BF;
-    flex-direction: row;
-    padding: 2rem 4rem;
-    justify-content: space-between;
-}
-
-h2.textoQuintaSeccion{
-    align-content: center;
-    padding: 10px 40rem 2rem 1rem;
-}
-
-.quintaSeccionFondo button{
-    color: #8B48BF;
-    background-color: white;
 }
