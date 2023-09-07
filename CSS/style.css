@@ -1,5 +1,6 @@
 *{
     font-family: 'Be Vietnam Pro', 'Montserrat', sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
 }
@@ -12,19 +13,17 @@ header {
     color: black;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    margin: 20px 120px;
+    margin: 40px 120px;
 }
 
 /* Logo de la página*/
 .logo img {
-    max-width: 100px;
-    padding: 15px 0px;
+    width: 115px;
 }
 
 /* Menú de escritorio de la página */
 .menuDesktop ul {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -32,9 +31,9 @@ header {
 
 .menuDesktop li {
     display: inline;
+    font-weight: normal;
     margin-right: 25px;
     position: relative;
-    /* Sombra del texto */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
@@ -50,16 +49,16 @@ header {
     cursor: pointer;
 }
 
-/* Botón de contacto de la página */
-button {
+/* Botones de la página */
+button, .contactButton{
     background-color: #8B48BF;
     border: none;
-    border-radius: 20px;
     color: white;
     cursor: pointer;
-    font-size: 0.7rem;
     font-weight: normal;
-    padding: 10px 30px;
+    border-radius: 60px;
+    font-size: 0.9rem;
+    padding: 15px 40px;
 }
 
 /* Menú en dispositivos móviles de la página */
@@ -75,22 +74,17 @@ button {
 }
 
 .line {
-    width: 35px;
-    /* Ancho de las líneas del icono */
-    height: 3px;
-    /* Altura de las líneas del icono */
+    width: 45px;
+    height: 4px;
     background-color: black;
-    /* Color de las líneas del icono */
-    margin: 4px 0;
-    /* Espaciado entre las líneas del icono */
+    margin: 5.5px 0;
 }
 
 /* Primera sección del main */
-.contenido {
+.primeraSeccion {
     display: flex;
     align-items: center;
-    gap: 20px;
-    margin: 80px 120px 90px 120px;
+    margin: 100px 120px 150px 120px;
 }
 
 .imagen img {
@@ -103,20 +97,22 @@ button {
 
 .texto {
     text-align: right;
+    padding-left: 50px;
 }
 
 .texto h1 {
     color: #232851;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    margin-left: 50px;
     line-height: 1.2;
 }
 
 .texto p {
     color: black;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 1.5;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 
 /* Segunda seccion del main */
@@ -143,8 +139,12 @@ article.encabezadosConFondo{
     font-weight: bold;
 }
 
+.encabezadosConFondo h2{    
+    font-size: 1.5rem;
+}
+
 article.parrafosConFondo {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     padding-bottom: 0.9rem;
     line-height: 20px;
     align-self: flex-start;
@@ -175,24 +175,22 @@ article.parrafosConFondo {
     font-size: 14px;
     background-color: #8B48BF;
     border-radius: 20px;
-    padding: 4px 16px;
+    padding: 8px 20px;
     text-align: center;
-    height: 1.8rem;
-    width: 3.15rem;
 }
 
 .encabezadosEnumeracion{
     color: #242E53;
-    padding: 0.3rem 0rem 0.3rem 0.1rem;
-    width: 100%;
+    padding: 0.4rem 0rem;
     text-align: start;
+    font-size: 0.8rem;
 }
 
 .parrafosEnumeracion{
     line-height: 23px;
     padding: 1.4rem 2rem 1.4rem 0.1rem;
     color: #B3B2B7;
-    font-size: 90%;
+    font-size: 0.9rem;
 }
 
 /* Cuarta seccion del main*/
@@ -212,6 +210,10 @@ article.parrafosConFondo {
 .encabezadoCuartaSeccion{
     padding-bottom: 3rem;
     color: #242E53;
+}
+
+.encabezadoCuartaSeccion h2{
+    font-size: 1.7rem;
 }
 
 .articulosCuartaSeccion{
@@ -280,10 +282,11 @@ p.parrCuartaSeccion{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    font-size: 2rem;
     text-align: center;
     margin: 1rem 0rem 2rem 0rem;
-    padding: 0rem 1.6rem 0rem 1.6rem;
-    letter-spacing: -0.005rem;
+    padding: 0rem 1rem 0rem 1rem;
+    width: 100%;
 }
 
 .quintaSeccionFondo button{
@@ -346,63 +349,137 @@ footer {
     text-align: center;
 }
 
-/* Estilos generales para el footer */
+/* Footer de la página */
 footer {
     background-color: #1E1E26;
-    color: #FFFFFF;
-    padding: 20px;
+    color: white;
+    padding: 40px 130px;
 }
 
-/* Estilos para el footer en el modo de escritorio */
-.footer-desktop {
+/* Footer en el modo de escritorio */
+#footerDesktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.redes-sociales img {
-    max-width: 30px;
-    margin-right: 10px;
+.logoRedes .logo {
+    padding-bottom: 40px;
 }
 
-.opciones ul {
-    font-size: 0.7rem;
+#redesSocialesDesktop img {
+    max-width: 30px;
+    margin-right: 10px;
+    padding-top: 40px;
+}
+
+#listaDesktop {
+    display: flex;
+    gap: 10rem;
+    justify-content: flex-start;
+    line-height: 2.2rem;
+    margin-right: 40px;
+}
+
+#listaDesktop ul {
+    display: block;
+    font-size: 0.9rem;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.opciones ul li {
-    margin-bottom: 10px;
+#listaDesktop li {
+    font-weight: normal;
 }
 
-.buscar input {
-    padding: 5px;
+#buscarDesktop {
+    margin-bottom: 80px;
+    display: flex;
 }
 
-/* Estilos para el footer en el modo móvil */
-.footer-mobile {
+#buscarDesktop input {
+    border: none;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    margin-right: 7px;
+    padding: 15px 60px 15px 10px;
+}
+
+.goButton {
+    border-radius: 40px;
+    font-size: 0.9rem;
+    padding: 15px 25px;
+}
+
+.inputFinal p {
+    text-align: right;
+}
+
+#copyRight {
+    color: #8C8C94;
+    font-size: 0.9rem;
+}
+
+/* Footer en el modo móvil */
+#footerMobile {
     text-align: center;
     display: none;
 }
 
-.buscar-mobile input {
-    margin-bottom: 10px;
-    padding: 5px;
+#buscarMobile {
+    display: flex;
+    justify-content: center;
 }
 
-.redes-sociales-mobile img {
+#buscarMobile input {
+    border: none;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    margin-right: 7px;
+    padding: 15px 60px 15px 10px;
+}
+
+#listasMobile {
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    line-height: 2rem;
+    margin: 40px 20px;
+}
+
+#listasMobile ul {
+    display: block;
+    font-size: 0.9rem;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#redesSocialesMobile {
+    margin: 40px 0 40px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#redesSocialesMobile a {
+    margin: 0 28px;
+}
+
+#redesSocialesMobile a:first-child {
+    margin-left: 0;
+}
+
+#redesSocialesMobile a:last-child {
+    margin-right: 0;
+}
+
+#redesSocialesMobile img {
     max-width: 30px;
-    margin: 0 10px;
-}
-
-.logo img {
-    max-width: 100px;
-    margin: 20px 0;
 }
 
 
-/* Media Queries, responsive con dispositivos móbiles y pantallas de escritorio */
+/* Media Queries, responsive con pantallas de escritorio */
 
 @media (min-width: 480px){
 /* Cambios para dispositivos escritorio con un ancho mayor de 480px */
@@ -435,7 +512,7 @@ header {
 section.segundaSeccion{
     background-color: #8B48BF;
     flex-direction: row;
-    padding: 1.5rem 2rem 0rem 5rem;
+    padding: 1.5rem 3rem 0rem 5rem;
 }
 
 #versionWeb{
@@ -450,13 +527,13 @@ section.segundaSeccion{
     font-weight: bold;
     width: 80%;
     padding: 0px 0px 0px 15px;
+    margin-right: 0.2rem;
 }
 
 .parrafosConFondo {
     font-size: 0.9rem;
     line-height: 20px;
-    padding-right: 8rem;
-    padding-left: 8rem;
+    padding: 0rem 8rem 0rem 3rem;
 }
 
 /* Tercera seccion del main */
@@ -481,12 +558,13 @@ section.segundaSeccion{
 
 .encabezadosEnumeracion{
     color: #242E53;
-    padding: 0rem 2rem 0.2rem 0.9rem;
+    padding: 0rem 2rem 0.2rem 0rem;
+    font-size: 1rem;
 }
 
 .parrafosEnumeracion{
     line-height: 25px;
-    padding: 0.6rem 0rem 1.4rem 3.5rem;
+    padding: 0.6rem 2rem 1.4rem 4.2rem;
     color: #B3B2B7;
     width: 29rem;
 }
@@ -497,7 +575,7 @@ section.segundaSeccion{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 1.8rem 0rem 3rem 0rem;
+    padding: 1.8rem 0rem 8rem 0rem;
 }
 
 .articulosCuartaSeccion{
@@ -506,7 +584,12 @@ section.segundaSeccion{
 
 .encabezadoCuartaSeccion{
     width: 100%;
+    font-size: 39px;
     text-align: center;
+}
+
+.cuartaSeccionDestacados h2{
+    font-size: 1.6rem;
 }
 
 .contenidoCuartaSeccion{
@@ -540,9 +623,10 @@ p.parrCuartaSeccion{
 }
 
 .quintaSeccionFondo h2{
+    font-size: 1.5rem;
     width: 280px;
     text-align: start;
-    padding: 8px 4rem 0rem 1rem;
+    padding: 7px 4rem 0rem 1rem;
 }
 
 .footer-desktop {
@@ -556,13 +640,20 @@ p.parrCuartaSeccion{
 }
 }
 
-
 /* Media query para el modo móvil */
 @media screen and (max-width: 768px) {
     /* Cambios para dispositivos móviles con un ancho de 480px */
     header {
         padding: 20px 60px;
         margin: 0;
+    }
+
+    .texto h1 {
+        font-size: 2.5rem;
+    }
+
+    .texto p {
+        font-size: 0.9rem;
     }
 
     .menuDesktop {
@@ -579,7 +670,8 @@ p.parrCuartaSeccion{
     .contactButton {
         display: none;
     }
-    .contenido {
+
+    .primeraSeccion {
         flex-direction: column;
         align-items: center;
         margin: 0;
@@ -596,5 +688,19 @@ p.parrCuartaSeccion{
     }
     .texto p {
         margin-bottom: 25px;
+    }
+
+    footer {
+        padding: 40px 60px;
+    }
+
+    #footerDesktop {
+        display: none;
+        /* Ocultar el footer de escritorio en el modo móvil */
+    }
+
+    #footerMobile {
+        display: block;
+        /* Mostrar el footer móvil en el modo móvil */
     }
 }

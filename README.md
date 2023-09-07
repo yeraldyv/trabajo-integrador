@@ -1,3 +1,13 @@
+Proyecto presentado por:
+  - Yeraldy Tatiana Villamizar Basto
+  - Xiomara
+
+Secciones elaboradas por cada integrante:
+
+  Yeraldy:
+
+  Construcción de las secciones 2, 3, 4 y 5 del main del documento HTML y de los estilos en el CSS de cada una de estas.
+
 ## El reto
 
 Su desafío es crear esta página de destino y hacer que se parezca lo más posible al diseño.
