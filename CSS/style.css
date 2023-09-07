@@ -4,82 +4,120 @@
     padding: 0;
 }
 
+
+/* Encabezado de página */
 header {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
     background-color: white;
     color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 120px;
 }
 
-/* Estilos para el logo */
+/* Logo de la página*/
 .logo img {
     max-width: 100px;
-    /* Ajusta el tamaño máximo del logo */
+    padding: 15px 0px;
 }
 
-/* Estilos para el icono de menú */
+/* Menú de escritorio de la página */
+.menuDesktop ul {
+    font-size: 0.7rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuDesktop li {
+    display: inline;
+    margin-right: 25px;
+    position: relative;
+    /* Sombra del texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.menuDesktop a {
+    text-decoration: none;
+    color: #232851;
+    transition: color 0.3s;
+}
+
+.menuDesktop a:hover {
+    color: #798c9f;
+    /* Color azul grisáceo oscuro al pasar el cursor */
+    cursor: pointer;
+}
+
+/* Botón de contacto de la página */
+button {
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: normal;
+    padding: 10px 30px;
+}
+
+/* Menú en dispositivos móviles de la página */
+.menuMobile {
+    display: none;
+    /* Ocultar el menú móvil en el modo escritorio */
+}
+
 .menu-icon {
     display: flex;
     flex-direction: column;
     cursor: pointer;
 }
 
-.iconoLineas {
-    width: 30px;
+.line {
+    width: 35px;
+    /* Ancho de las líneas del icono */
     height: 3px;
+    /* Altura de las líneas del icono */
     background-color: black;
-    margin: 3px 0;
+    /* Color de las líneas del icono */
+    margin: 4px 0;
+    /* Espaciado entre las líneas del icono */
 }
 
-.primeraSeccion {
-    text-align: center;
-    padding: 20px;
+/* Primera sección del main */
+.contenido {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 80px 120px 90px 120px;
 }
 
-/* Imagen centrada */
-.primeraSeccion img {
-    display: block;
-    margin: 0 auto;
+.imagen img {
     max-width: 100%;
 }
 
-.espaciado {
-    height: 50px;
+.imagen, .texto {
+    flex: 1;
 }
 
-.primeraSeccion h1 {
-    font-size: 30px;
+.texto {
+    text-align: right;
+}
+
+.texto h1 {
     color: #232851;
-    text-align: right;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    line-height: 1.2;
 }
 
-.primeraSeccion p {
-    font-size: 16px;
+.texto p {
     color: black;
-    text-align: right;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 50px;
 }
-
-.primeraSeccion button {
-    background-color: #8B48BF;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 10px;
-}
-
-button{
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 10px;
-    border: none;
-    background-color: #8B48BF;
-}
-
 
 /* Segunda seccion del main */
 .segundaSeccion{
@@ -88,6 +126,15 @@ button{
     background-color: #3CDDF3;
     color: white;
     padding: 1.5rem 7rem 0.8rem 1.5rem;
+    justify-content: space-around;
+}
+
+#versionWeb{
+    display: none;
+}
+
+#versionMobile{
+    display: none;
 }
 
 article.encabezadosConFondo{
@@ -108,29 +155,44 @@ article.parrafosConFondo {
 .terceraSeccionEnumeracion{
     display: flex;
     flex-direction: column;
-    padding: 3rem 5rem 1rem 2rem;
+    padding: 3rem 0rem 1rem 2rem;
 }
 
 .contenedorEnumeracion{
+    align-items: center;
     display: flex;
+    background-color: rgba(139, 72, 191, 0.3);
+    font-size: 80%;
+    gap: 15px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 38px;
 }
 
 .enumeracion{
     border: none;
     color: white;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 14px;
     background-color: #8B48BF;
+    border-radius: 20px;
+    padding: 4px 16px;
+    text-align: center;
+    height: 1.8rem;
+    width: 3.15rem;
 }
 
 .encabezadosEnumeracion{
     color: #242E53;
-    padding: 0rem 2rem 0.5rem 1rem;
+    padding: 0.3rem 0rem 0.3rem 0.1rem;
+    width: 100%;
+    text-align: start;
 }
 
 .parrafosEnumeracion{
-    line-height: 25px;
-    padding: 1.4rem 0rem 1.4rem 0.1rem;
+    line-height: 23px;
+    padding: 1.4rem 2rem 1.4rem 0.1rem;
     color: #B3B2B7;
+    font-size: 90%;
 }
 
 /* Cuarta seccion del main*/
@@ -143,9 +205,17 @@ article.parrafosConFondo {
     padding: 1.8rem 2rem 3rem 2rem;
 }
 
+#versionMobile{
+    display: flex;
+}
+
 .encabezadoCuartaSeccion{
     padding-bottom: 3rem;
     color: #242E53;
+}
+
+.articulosCuartaSeccion{
+    display: none;
 }
 
 .articulosCuartaSeccion p{
@@ -191,13 +261,8 @@ p.parrCuartaSeccion{
 }
 
 .cuartaSeccionDestacados button{
-    border: none;
-    border-radius: 20px;
-    font-weight: normal;
     font-size: 14px;
     margin: 2rem 0rem 0rem 0rem;
-    color: white;
-    background-color: #8B48BF;
     padding: 0.6rem 3rem 0.4rem 3rem;
 }
 
@@ -212,19 +277,18 @@ p.parrCuartaSeccion{
 }
 
 .quintaSeccionFondo h2{
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     margin: 1rem 0rem 2rem 0rem;
     padding: 0rem 1.6rem 0rem 1.6rem;
+    letter-spacing: -0.005rem;
 }
 
 .quintaSeccionFondo button{
-    border: none;
-    border-radius: 20px;
     color: white;
     background-color: #232851;
-    font-weight: normal;
     font-size: 12px;
     padding: 0.59rem 1rem 0.49rem 1rem;
     width: 100px;
@@ -255,12 +319,8 @@ footer {
 }
 
 .cajaBusqueda button {
-    background-color: #800080;
-    color: #fff;
-    border: none;
     padding: 5px 10px;
     border-radius: 10px;
-    cursor: pointer;
 }
 
 /* Navegación en dos columnas */
@@ -286,59 +346,129 @@ footer {
     text-align: center;
 }
 
+/* Estilos generales para el footer */
+footer {
+    background-color: #1E1E26;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+/* Estilos para el footer en el modo de escritorio */
+.footer-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociales img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+.opciones ul {
+    font-size: 0.7rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.opciones ul li {
+    margin-bottom: 10px;
+}
+
+.buscar input {
+    padding: 5px;
+}
+
+/* Estilos para el footer en el modo móvil */
+.footer-mobile {
+    text-align: center;
+    display: none;
+}
+
+.buscar-mobile input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.redes-sociales-mobile img {
+    max-width: 30px;
+    margin: 0 10px;
+}
+
+.logo img {
+    max-width: 100px;
+    margin: 20px 0;
+}
+
 
 /* Media Queries, responsive con dispositivos móbiles y pantallas de escritorio */
 
 @media (min-width: 480px){
+/* Cambios para dispositivos escritorio con un ancho mayor de 480px */
+header {
+    padding: 20px 60px;
+    margin: 0;
+}
+
+.menuDesktop {
+    /* Ocultar el menú de escritorio en el modo móvil */
+    display: block;
+}
+
+.menuMobile {
+    /* Mostrar el menú móvil en el modo móvil */
+    display: none;
+}
+
+.contactButton {
+    display: block;
+}
+
+/* Menú en dispositivos móviles de la página */
+.menuMobile {
+    display: none;
+    /* Ocultar el menú móvil en el modo escritorio */
+}
+
  /* Segunda seccion del main  */
 section.segundaSeccion{
     background-color: #8B48BF;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 1.5rem 3rem 0rem 3.5rem;
+    padding: 1.5rem 2rem 0rem 5rem;
+}
+
+#versionWeb{
+    display: flex;
+}
+
+#versionMobileSectionDos{
+    display: none;
 }
 
 .encabezadosConFondo{
     font-weight: bold;
-    width: 500px;
+    width: 80%;
+    padding: 0px 0px 0px 15px;
 }
 
 .parrafosConFondo {
     font-size: 0.9rem;
     line-height: 20px;
-    padding-right: 10rem;
-    padding-left: 2rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
 }
 
-/* Quinta seccion con fondo */
-
-.quintaSeccionFondo{
-    background-color: #8B48BF;
-    flex-direction: row;
-    padding: 1rem 4rem 0rem 4rem;
-    justify-content: space-between;
-}
-
-.quintaSeccionFondo button{
-    color: #8B48BF;
-    background-color: white;
-}
-
-.quintaSeccionFondo h2{
-    width: 280px;
-    text-align: start;
-    padding: 8px 4rem 0rem 1rem;
-}
-
-/* 
-
-Tercera seccion del main
+/* Tercera seccion del main */
 .terceraSeccionEnumeracion{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 3rem 5rem 1rem 2rem; 
+}
+
+#versionMobile{
+    display: flex;
 }
 
 .terceraSeccionEnumeracion article{
@@ -346,7 +476,7 @@ Tercera seccion del main
 }
 
 .contenedorEnumeracion{
-    display: flex;
+    background: white;
 }
 
 .encabezadosEnumeracion{
@@ -361,49 +491,110 @@ Tercera seccion del main
     width: 29rem;
 }
 
-Cuarta seccion del main
+/* Cuarta seccion del main*/
 .cuartaSeccionDestacados{
+    justify-content: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-}
-
-.encabezadoCuartaSeccion{
-    color: #242E53;
-    width: 60rem;
-    align-content: center;
-    padding: 0rem 6rem 3rem 30rem;
+    padding: 1.8rem 0rem 3rem 0rem;
 }
 
 .articulosCuartaSeccion{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 23rem;
- }
-
-.ImgCuartaSeccion{
-    flex-direction: row;
-    justify-content: center;
 }
 
-.articulosCuartaSeccion h4{
-    align-self: center;
+.encabezadoCuartaSeccion{
+    width: 100%;
+    text-align: center;
 }
 
-h4.h4CuartaSeccion{
-    align-self: center;
-    padding-bottom: 0.3rem;
+.contenidoCuartaSeccion{
+    display: flex;
+    margin: 0px 12px 40px 0px;
+    width: 30vw;
+}
+
+p.parrCuartaSeccion{
+    padding: 0px;
+    margin-top: 0.8rem;
 }
 
 .cuartaSeccionDestacados button{
-    margin: 2rem 0rem 0rem 0rem;
-    color: white;
-    background-color: #8B48BF;
-    padding: 0.6rem 3rem 0.4rem 3rem;
+    margin: 0px 250px;
 }
- */
 
+/* Quinta seccion con fondo */
+
+.quintaSeccionFondo{
+    background-color: #8B48BF;
+    flex-direction: row;
+    padding: 1rem 4rem 0rem 4rem;
+    justify-content: space-between;
+}
+
+.quintaSeccionFondo button{
+    color: #8B48BF;
+    background-color: white;
+    margin-right: 55px;
+}
+
+.quintaSeccionFondo h2{
+    width: 280px;
+    text-align: start;
+    padding: 8px 4rem 0rem 1rem;
+}
+
+.footer-desktop {
+    display: none;
+    /* Ocultar el footer de escritorio en el modo móvil */
+}
+
+.footer-mobile {
+    display: block;
+    /* Mostrar el footer móvil en el modo móvil */
+}
+}
+
+
+/* Media query para el modo móvil */
+@media screen and (max-width: 768px) {
+    /* Cambios para dispositivos móviles con un ancho de 480px */
+    header {
+        padding: 20px 60px;
+        margin: 0;
+    }
+
+    .menuDesktop {
+        /* Ocultar el menú de escritorio en el modo móvil */
+        display: none;
+    }
+
+    .menuMobile {
+        /* Mostrar el menú móvil en el modo móvil */
+        display: block;
+    }
+
+    /* Ocultar el botón de contacto en el modo móvil */
+    .contactButton {
+        display: none;
+    }
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 40px 40px;
+    }
+
+    /* Espaciado en la parte inferior de los elementos en el modo móvil */
+    .imagen img {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .texto h1{
+        margin-bottom: 25px;
+    }
+    .texto p {
+        margin-bottom: 25px;
+    }
 }
