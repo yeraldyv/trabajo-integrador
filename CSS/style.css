@@ -11,7 +11,7 @@ header {
     color: black;
     display: flex;
     justify-content: space-between;
-    margin: 40px 140px;
+    margin: 40px 120px;
 }
 
 /* Logo de la página*/
@@ -93,8 +93,7 @@ button {
     max-width: 100%;
 }
 
-.imagen,
-.texto {
+.imagen, .texto {
     flex: 1;
 }
 
@@ -439,7 +438,7 @@ footer {
     }
 
     .texto h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .texto p {
