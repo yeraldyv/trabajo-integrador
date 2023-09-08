@@ -5,7 +5,6 @@
     padding: 0;
 }
 
-
 /* Encabezado de página */
 header {
     align-items: center;
@@ -50,7 +49,7 @@ header {
 }
 
 /* Botones de la página */
-button, .contactButton{
+button {
     background-color: #8B48BF;
     border: none;
     color: white;
@@ -297,58 +296,6 @@ p.parrCuartaSeccion{
     width: 100px;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-}
-
-/* Cuadro de búsqueda */
-.cajaBusqueda {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #fff;
-}
-
-.cajaBusqueda input {
-    flex: 1;
-    border: none;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.cajaBusqueda button {
-    padding: 5px 10px;
-    border-radius: 10px;
-}
-
-/* Navegación en dos columnas */
-.navigation {
-    display: flex;
-    justify-content: space-between;
-}
-
-.column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.icons-and-logo {
-    text-align: center;
-}
-
-.icon-row {
-    font-size: 24px;
-}
-
-.copyright {
-    text-align: center;
-}
-
 /* Footer de la página */
 footer {
     background-color: #1E1E26;
@@ -478,35 +425,9 @@ footer {
     max-width: 30px;
 }
 
-
 /* Media Queries, responsive con pantallas de escritorio */
 
 @media (min-width: 480px){
-/* Cambios para dispositivos escritorio con un ancho mayor de 480px */
-header {
-    padding: 20px 60px;
-    margin: 0;
-}
-
-.menuDesktop {
-    /* Ocultar el menú de escritorio en el modo móvil */
-    display: block;
-}
-
-.menuMobile {
-    /* Mostrar el menú móvil en el modo móvil */
-    display: none;
-}
-
-.contactButton {
-    display: block;
-}
-
-/* Menú en dispositivos móviles de la página */
-.menuMobile {
-    display: none;
-    /* Ocultar el menú móvil en el modo escritorio */
-}
 
  /* Segunda seccion del main  */
 section.segundaSeccion{
@@ -549,7 +470,7 @@ section.segundaSeccion{
 }
 
 .terceraSeccionEnumeracion article{
-    margin: 0rem 0.7rem 0.5rem 0.9rem;
+    margin: 0rem 0.7rem 0.5rem 0.7rem;
 }
 
 .contenedorEnumeracion{
