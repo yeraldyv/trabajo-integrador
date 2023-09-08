@@ -1,5 +1,6 @@
-*{
+* {
     font-family: 'Be Vietnam Pro', 'Montserrat', sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
 }
@@ -89,7 +90,8 @@ button {
     max-width: 100%;
 }
 
-.imagen, .texto {
+.imagen,
+.texto {
     flex: 1;
 }
 
@@ -295,57 +297,6 @@ p.parrCuartaSeccion {
     width: 100px;
 }
 
-/* Media query para el modo móvil */
-@media screen and (max-width: 768px) {
-    /* Cambios para dispositivos móviles con un ancho de 480px */
-    header {
-        padding: 20px 60px;
-        margin: 0;
-    }
-
-    .texto h1 {
-        font-size: 2.5rem;
-    }
-
-    .texto p {
-        font-size: 0.9rem;
-    }
-
-    .menuDesktop {
-        /* Ocultar el menú de escritorio en el modo móvil */
-        display: none;
-    }
-
-    .menuMobile {
-        /* Mostrar el menú móvil en el modo móvil */
-        display: block;
-    }
-
-    /* Ocultar el botón de contacto en el modo móvil */
-    .contactButton {
-        display: none;
-    }
-
-    .primeraSeccion {
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        padding: 40px 40px;
-    }
-
-    /* Espaciado en la parte inferior de los elementos en el modo móvil */
-    .imagen img {
-        margin-bottom: 50px;
-        text-align: center;
-    }
-    .texto h1{
-        margin-bottom: 25px;
-    }
-    .texto p {
-        margin-bottom: 25px;
-    }
-}
-
 /* Footer de la página */
 footer {
     background-color: #1E1E26;
@@ -475,23 +426,6 @@ footer {
     max-width: 30px;
 }
 
-/* Media query para el modo móvil */
-@media screen and (max-width: 768px) {
-    footer {
-        padding: 40px 60px;
-    }
-
-    #footerDesktop {
-        display: none;
-        /* Ocultar el footer de escritorio en el modo móvil */
-    }
-
-    #footerMobile {
-        display: block;
-        /* Mostrar el footer móvil en el modo móvil */
-    }
-}
-
 /* Media Queries, responsive con pantallas de escritorio */
 
 @media (min-width: 480px) {
@@ -537,7 +471,7 @@ footer {
     }
 
     .terceraSeccionEnumeracion article {
-        margin: 0rem 0.7rem 0.5rem 0.9rem;
+        margin: 0rem 0.7rem 0.5rem 0.7rem;
     }
 
     .contenedorEnumeracion {
@@ -617,4 +551,81 @@ footer {
         padding: 7px 4rem 0rem 1rem;
     }
 
+    .footer-desktop {
+        display: none;
+        /* Ocultar el footer de escritorio en el modo móvil */
+    }
+
+    .footer-mobile {
+        display: block;
+        /* Mostrar el footer móvil en el modo móvil */
+    }
+}
+
+/* Media query para el modo móvil */
+@media screen and (max-width: 768px) {
+
+    /* Cambios para dispositivos móviles con un ancho de 480px */
+    header {
+        padding: 20px 60px;
+        margin: 0;
+    }
+
+    .texto h1 {
+        font-size: 2.5rem;
+    }
+
+    .texto p {
+        font-size: 0.9rem;
+    }
+
+    .menuDesktop {
+        /* Ocultar el menú de escritorio en el modo móvil */
+        display: none;
+    }
+
+    .menuMobile {
+        /* Mostrar el menú móvil en el modo móvil */
+        display: block;
+    }
+
+    /* Ocultar el botón de contacto en el modo móvil */
+    .contactButton {
+        display: none;
+    }
+
+    .primeraSeccion {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 40px 40px;
+    }
+
+    /* Espaciado en la parte inferior de los elementos en el modo móvil */
+    .imagen img {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .texto h1 {
+        margin-bottom: 25px;
+    }
+
+    .texto p {
+        margin-bottom: 25px;
+    }
+
+    footer {
+        padding: 40px 60px;
+    }
+
+    #footerDesktop {
+        display: none;
+        /* Ocultar el footer de escritorio en el modo móvil */
+    }
+
+    #footerMobile {
+        display: block;
+        /* Mostrar el footer móvil en el modo móvil */
+    }
 }
