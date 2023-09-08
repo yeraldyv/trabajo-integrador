@@ -12,30 +12,50 @@
 <body>
     <header>
         <div class="logo">
-            <img src="img/logo.svg" alt="Logo de la empresa">
+            <img src="img/logo.svg" alt="Logo de Sportit">
         </div>
-        <div class="menu-icon">
-            <div class="iconoLineas"></div>
-            <div class="iconoLineas"></div>
-            <div class="iconoLineas"></div>
+        <nav class="menuDesktop">
+            <ul>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Training</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>
+        </nav>
+        <button class="contactButton">Contact</button>
+        <div class="menuMobile">
+            <div class="menu-icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </div>
     </header>
+
     <main>
-        <!-- Primera seccion del main, contiene una imagen del tenista y textos -->
+        <!-- Primera seccion del main, contiene una imagen del tenista y descripción de este -->
         <section class="primeraSeccion">
-            <img src="img/padel-intro.png" alt="Tenista">
-                <div class="espaciado"></div>
-            <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
-            <p>The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
-            <button>Contact</button>
+            <div class="imagen">
+                <img src="img/padel-intro.png" alt="Tenista">
+            </div>
+            <div class="texto">
+                <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
+                <p>The final Open of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
+                <button>Contact</button>
+            </div>
         </section>
+
         <!-- Segunda seccion del main, contiene el texto ¿Que es diferente entre pros? -->
         <section class="segundaSeccion">
             <article class="encabezadosConFondo">
                 <h2>What's different between pros?</h2>
             </article>
             <article class="parrafosConFondo">
-                <p>Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
+                <p id="versionMobileSectionDos">Manage provides all the functionality your teas needs, without the complexity.
+                    Our software is tailor-made for modern digital product teams</p>
+                <p id="versionWeb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet consequat purus sit
+                    amet sodales. In faucibus ut nisi eu dignissim. Vestibulum fringilla velit sed tincidunt tincidunt.</p>
             </article>
         </section>
         <!-- Tercera seccion del main -->
@@ -45,21 +65,27 @@
                     <button class="enumeracion">01</button>
                     <h3 class="encabezadosEnumeracion">Track company-wide progress</h3>
                 </div>
-                <p class="parrafosEnumeracion">Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
+                <p class="parrafosEnumeracion">Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus
+                    sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget,
+                    consequat dolor.</p>
             </article>
             <article>
                 <div class="contenedorEnumeracion">
                     <button class="enumeracion">02</button>
                     <h3 class="encabezadosEnumeracion">Advance built-in reports</h3>
                 </div>
-                <p class="parrafosEnumeracion">Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
+                <p class="parrafosEnumeracion">Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus
+                    sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget,
+                    consequat dolor.</p>
             </article>
             <article>
                 <div class="contenedorEnumeracion">
                     <button class="enumeracion">03</button>
                     <h3 class="encabezadosEnumeracion">Everything you need in one place</h3>
                 </div>
-                <p class="parrafosEnumeracion">Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget, consequat dolor.</p>
+                <p class="parrafosEnumeracion">Donec elit est, mattis lacinia arcu eu, efficitur consequat augue. Nam tellus
+                    sem, tempus pellentesque egestas vitae, efficitur vel nulla. Etiam vel orci rutrum, placerat quam eget,
+                    consequat dolor.</p>
             </article>
         </section>
         <!-- Cuarta seccion del main -->
@@ -68,66 +94,109 @@
                 <h2>Best of the month</h2>
             </div>
             <article class="articulosCuartaSeccion">
-                <img class="ImgCuartaSeccion" src="IMG\avatar-sanyo.png" alt="Foto perfil deportista Sanyo">
-                <h4 class="h4CuartaSeccion">Sanyo</h4>
-                <p class="parrCuartaSeccion">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                <div class="contenidoCuartaSeccion">
+                    <img class="ImgCuartaSeccion" src="IMG\avatar-sanyo.png" alt="Foto perfil deportista Sanyo">
+                    <h4 class="h4CuartaSeccion">Sanyo</h4>
+                    <p class="parrCuartaSeccion">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut
+                        suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. </p>
+                </div>
+            </article>
+            <article class="articulosCuartaSeccion" id="versionMobile">
+                <div class="contenidoCuartaSeccion">
+                    <img class="ImgCuartaSeccion" src="IMG\avatar.lebron.png" alt="Foto perfil deportista Lebron">
+                    <h4 class="h4CuartaSeccion">Lebron</h4>
+                    <p class="parrCuartaSeccion">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut
+                        suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. </p>
+                </div>
             </article>
             <article class="articulosCuartaSeccion">
-                <img class="ImgCuartaSeccion" src="IMG\avatar.lebron.png" alt="Foto perfil deportista Lebron">
-                <h4 class="h4CuartaSeccion">Lebron</h4>
-                <p class="parrCuartaSeccion">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-            </article>
-            <article class="articulosCuartaSeccion">
-                <img class="ImgCuartaSeccion" src="IMG\avatar-navarro.png" alt="Foto perfil deportista Navarro">
-                <h4 class="h4CuartaSeccion">Navarro</h4>
-                <p class="parrCuartaSeccion">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                <div class="contenidoCuartaSeccion">
+                    <img class="ImgCuartaSeccion" src="IMG\avatar-navarro.png" alt="Foto perfil deportista Navarro">
+                    <h4 class="h4CuartaSeccion">Navarro</h4>
+                    <p class="parrCuartaSeccion">Etiam fermentum, nulla eget gravida cursus, purus lectus feugiat mauris, ut
+                        suscipit massa ipsum eu neque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus. </p>
+                </div>
             </article>
             <button>More</button>
         </section>
         <!-- Quinta seccion del main -->
         <section class="quintaSeccionFondo">
-            <h2 class="textoQuintaSeccion">Get to know the best teams of the year</h2>
+            <h2>Get to know the best teams of the year</h2>
             <button>Go for it</button>
         </section>
     </main>
+
     <footer>
-        <article class="cajaBusqueda">
-            <input type="text" placeholder="Update in your inbox...">
-            <button>Go</button>
-        </article>
-    
-        <article class="navigation">
-            <div class="column">
+        <div id="footerDesktop">
+            <div class="logoRedes">
+                <div class="logo">
+                    <img src="IMG/logoWhite.svg" alt="Logo de la empresa">
+                </div>
+                <div id="redesSocialesDesktop">
+                    <a href="#"><img src="IMG/icon-facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="IMG/icon-youtube.svg" alt="YouTube"></a>
+                    <a href="#"><img src="IMG/icon-twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="IMG/icon-pinterest.svg" alt="Pinterest"></a>
+                    <a href="#"><img src="IMG/icon-instagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+            <div id="listaDesktop">
                 <ul>
                     <li>Home</li>
                     <li>Pricing</li>
                     <li>Products</li>
                     <li>About Us</li>
                 </ul>
-            </div>
-            <div class="column">
                 <ul>
-                    <li>Trainning</li>
+                    <li>Training</li>
                     <li>Community</li>
                     <li>Privacy Policy</li>
                 </ul>
             </div>
-        </article>
-    
-        <article class="icons-and-logo">
-            <div class="icon-row">
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-instagram"></i>
+            <div class="inputFinal">
+                <div id="buscarDesktop">
+                    <input type="text" placeholder="Update in your inbox...">
+                    <button class="goButton">Go</button>
+                </div>
+                <p id="copyRight">Copyright 2020. All Rights Reserved</p>
             </div>
-            <div class="logo">
-                <img src="img/logo.svg" alt="Logo de la empresa">
-            </div>
-        </article>
+        </div>
     
-        <article class="copyright">
-            <p>&copy; 2023. Todos los derechos reservados.</p>
-        </article>
+        <div id="footerMobile">
+            <div id="buscarMobile">
+                <input type="text" placeholder="Update in your inbox...">
+                <button>Go</button>
+            </div>
+            <div id="listasMobile">
+                <ul>
+                    <li>Home</li>
+                    <li>Pricing</li>
+                    <li>Products</li>
+                    <li>About Us</li>
+                </ul>
+                <ul>
+                    <li>Training</li>
+                    <li>Community</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="logoRedes">
+                <div id="redesSocialesMobile">
+                    <a href="#"><img src="IMG/icon-facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="IMG/icon-youtube.svg" alt="YouTube"></a>
+                    <a href="#"><img src="IMG/icon-twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="IMG/icon-pinterest.svg" alt="Pinterest"></a>
+                    <a href="#"><img src="IMG/icon-instagram.svg" alt="Instagram"></a>
+                </div>
+                <div class="logo">
+                    <img src="IMG/logoWhite.svg" alt="Logo de la empresa">
+                </div>
+            </div>
+            <p id="copyRight">Copyright 2020. All Rights Reserved</p>
+        </div>
     </footer>
 </body>
 </html>
