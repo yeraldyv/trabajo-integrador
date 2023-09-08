@@ -550,16 +550,6 @@ footer {
         text-align: start;
         padding: 7px 4rem 0rem 1rem;
     }
-
-    .footer-desktop {
-        display: none;
-        /* Ocultar el footer de escritorio en el modo móvil */
-    }
-
-    .footer-mobile {
-        display: block;
-        /* Mostrar el footer móvil en el modo móvil */
-    }
 }
 
 /* Media query para el modo móvil */
