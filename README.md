@@ -1,12 +1,16 @@
 Proyecto presentado por:
   - Yeraldy Tatiana Villamizar Basto
-  - Xiomara
+  - Xiomara Lissette Bazan Balladares
 
 Secciones elaboradas por cada integrante:
 
   Yeraldy:
 
   Construcción de las secciones 2, 3, 4 y 5 del main del documento HTML y de los estilos en el CSS de cada una de estas.
+
+  Xiomara:
+
+  Construcción del header de la página, en la maian la sección 1 que incluye la imagen del tenista y los textos a sus derecha junto con el botón, también el footer, todo lo anterior tanto en modo desktop como mobile. Esto fue realizado en html y css.
 
 ## El reto
 
